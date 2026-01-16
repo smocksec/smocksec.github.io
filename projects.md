@@ -19,3 +19,6 @@ Analyzed a malicious PDF delivering a second-stage payload via embedded JavaScri
 
 🔗 **Full technical writeup:**  
 👉 https://medium.com/@yourname/malicious-pdf-analysis
+
+LummaStealer Flow.jpg
+![Extracted JavaScript from malicious PDF](/assets/images/LummaStealer Flow.jpg)
