@@ -6,11 +6,17 @@ Cybersecurity Analyst focused on:
 - Malware Analysis
 - Automation
 
-## 🧪 Projects
-- Malware analysis writeups
-- Splunk detection rules
-- SOC automation scripts
+## 🚀 Portfolio Sections
+
+### 📁 Projects
+Hands-on cybersecurity projects, automation, and tooling.  
+👉 [View Projects](/projects)
+
+### 🧪 Writeups
+Incident response, malware analysis, and DFIR writeups.  
+👉 [Read Writeups](/writeups)
 
 ## 📫 Contact
 - GitHub: https://github.com/smocksec
 - LinkedIn: (add later)
+- [Contact](mailto:aufarifqi119@gmail.com)
