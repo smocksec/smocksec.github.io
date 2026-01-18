@@ -17,15 +17,6 @@ SHA256: 07b8e705a0017ab1df5ffabc1fc7fb0a4d0738e98235b5725e47bb9d5229c5c4
   <button onclick="copyIOC('ioc-1')">📋 Copy</button>
 </div>
 
-<script>
-function copyIOC(id) {
-  const text = document.getElementById(id).innerText;
-  navigator.clipboard.writeText(text).then(() => {
-    alert("IOC copied to clipboard!");
-  });
-}
-</script>
-
 <style>
 .ioc-box {
   border: 1px solid #ccc;
@@ -95,3 +86,13 @@ Wireshark
 👉 https://medium.com/@aufarifqi119/new-lummastealer-with-9-payloads-exposed-ee9c6e58fff4?sk=6ffb23cc5175e3e5674ac1b3312db1f5
 
 LummaStealer Flow.jpg ![Extracted JavaScript from malicious PDF](/assets/images/LummaStealer Flow.jpg)
+
+
+<script>
+function copyIOC(id) {
+  const text = document.getElementById(id).innerText;
+  navigator.clipboard.writeText(text).then(() => {
+    alert("IOC copied to clipboard!");
+  });
+}
+</script>
