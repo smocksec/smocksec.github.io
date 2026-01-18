@@ -2,7 +2,7 @@
 
 ## 🧪 Malware Analysis
 >> Lummastealer with 9 payloads exposed 
-👉 [View Project](/projects/New-LummaStealer-With-9-Payloads-Exposed)
+👉 [View Project](/projects/lumma-stealer-9-payloads)
 
 ---
 
