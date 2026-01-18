@@ -1,6 +1,5 @@
-# 👋 Hi, I'm SmockSec
-
-Cybersecurity Analyst focused on:
+# 👋 Hi, I'm Aufa Rifqi
+I'm a Cybersecurity Engineer with 3+ years of hands-on experience in :
 - SOC Operations
 - Detection Engineering
 - Malware Analysis
@@ -9,14 +8,10 @@ Cybersecurity Analyst focused on:
 ## 🚀 Portfolio Sections
 
 ### 📁 Projects
-Hands-on cybersecurity projects, automation, and tooling.  
+Hands-on cybersecurity projects, automation, malware analysis, and DFIR writeups and tooling.  
 👉 [View Projects](/projects)
-
-### 🧪 Writeups
-Incident response, malware analysis, and DFIR writeups.  
-👉 [Read Writeups](/writeups)
 
 ## 📫 Contact
 - GitHub: https://github.com/smocksec
-- LinkedIn: (add later)
+- LinkedIn: https://www.linkedin.com/in/aufa-rifqi-211939128/
 - [Contact](mailto:aufarifqi119@gmail.com)
