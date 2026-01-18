@@ -8,8 +8,9 @@ I'm a Cybersecurity Engineer with 3+ years of hands-on experience in :
 ## 🚀 Portfolio Sections
 
 ### 📁 Projects
-Hands-on cybersecurity projects, automation, malware analysis, and DFIR writeups and tooling.  
-👉 [View Projects](/projects)
+Hands-on cybersecurity projects, automation, malware analysis, and DFIR writeups and tooling.
+-> LummaStealer with 9 payloads IOC
+👉 [Read Project](/projects/lumma-stealer-9-payloads)
 
 ## 📫 Contact
 - GitHub: https://github.com/smocksec
