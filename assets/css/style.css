@@ -1,30 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;600&display=swap');
+/* ===== Global Dark Theme Override (Cayman-safe) ===== */
+
+body {
+  background-color: #0b0b0f;      /* deep SOC black */
+  color: #c9b6ff;                 /* soft neon purple */
+  font-family: 'Inter', sans-serif;
+}
+
+/* Links */
+a {
+  color: #b983ff;
+}
+
+a:hover {
+  color: #e0b3ff;
+}
+
+/* Headings */
+h1, h2, h3, h4 {
+  color: #e9d5ff;
+  font-weight: 600;
+}
+
+/* Page container */
+.page-content {
+  max-width: 900px;
+  margin: auto;
+}
 /* IOC Box Styling */
+/* ===== IOC Box Styling (Neon SOC Style) ===== */
+
+.ioc-section {
+  margin-top: 30px;
+  padding: 20px;
+  border: 1px solid #3b2f5f;
+  border-radius: 10px;
+  background: #0f0f17;
+}
+
 .ioc-box {
-  border: 1px solid #2f2f2f;
-  background: #0d0d0d;
-  padding: 14px;
-  margin: 20px 0;
+  background: #0a0a12;
+  border: 1px solid #4b3b7a;
+  padding: 16px;
+  margin: 18px 0;
   border-radius: 8px;
 }
 
 .ioc-box pre {
   margin: 0;
-  color: #7CFC00; /* SOC green */
+  font-family: 'JetBrains Mono', monospace;
   font-size: 0.85em;
+  color: #aaffc3;                /* readable neon green */
   white-space: pre-wrap;
   word-break: break-word;
 }
 
+/* Copy button */
 .ioc-box button {
   margin-top: 10px;
-  padding: 6px 12px;
-  background: #1f1f1f;
-  color: #fff;
-  border: 1px solid #555;
-  border-radius: 4px;
+  padding: 6px 14px;
+  font-size: 0.75em;
+  font-family: 'Inter', sans-serif;
+  background: #1a102b;
+  color: #d8b4ff;
+  border: 1px solid #6b4eff;
+  border-radius: 6px;
   cursor: pointer;
 }
 
 .ioc-box button:hover {
-  background: #333;
+  background: #2a1848;
+  color: #ffffff;
+}
+
+p, li {
+  color: #d6ccff;
+  line-height: 1.65;
+}
+
+body.page-projects {
+  background: #0b0b0f;
+}
+/* Improve Cayman readability for long reports */
+.page-content {
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Section spacing */
+.page-content h2 {
+  margin-top: 40px;
+}
+
+/* IOC block spacing */
+.ioc-box {
+  margin-top: 15px;
+}
+
+.ioc-section {
+  padding: 20px;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
 }
