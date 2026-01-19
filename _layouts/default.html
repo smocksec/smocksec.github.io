@@ -3,10 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <title>{{ page.title }}</title>
-  <link rel="stylesheet" href="/assets/css/custom.css">
+
+  <!-- Theme CSS -->
+  <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
 </head>
 <body>
-  {{ content }}
+  <main>
+    {{ content }}
+  </main>
+
+  <!-- Global JS -->
+  <script src="{{ '/assets/js/ioc-copy.js' | relative_url }}"></script>
 </body>
 </html>
-<script src="/assets/js/ioc-copy.js"></script>
