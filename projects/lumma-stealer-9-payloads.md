@@ -1,6 +1,5 @@
 ---
 title: 🧪 New LummaStealer With 9 Payloads Exposed !!!!
-layout: default
 ---
 
 Summary:
