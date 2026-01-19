@@ -1,6 +1,6 @@
 title: SmockSec
 description: Cybersecurity Portfolio | SOC | DFIR | Detection Engineering
 theme: jekyll-theme-cayman
-# Load custom assets
+
 include:
   - assets
