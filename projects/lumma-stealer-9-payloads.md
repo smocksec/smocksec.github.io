@@ -113,26 +113,24 @@ Credential Targeting (Observed at Runtime)
 <div class="highlight-box">
 
 **Primary C2**  
---> offenms[.]cyou 
+--> offenms[.]cyou<br>
 --> file-storage[.]cc
 
 </div>
 
-Follow-up / Secondary Malware Infrastructure 
---> https://pastebin[.]com/raw/pr8gCLAA 
---> memory-scanner[.]cc 
---> communicationfirewall-security[.]cc
+Follow-up / Secondary Malware Infrastructure<br>
+--> https://pastebin[.]com/raw/pr8gCLAA<br>
+--> memory-scanner[.]cc<br>
+--> communicationfirewall-security[.]cc<br>
 
-Tools Used:
+Tools Used:<br>
 
-exeinfoPE
-PE-Studio
-x32dbg
-Wireshark
-🔗 Full technical writeup:
+>> exeinfoPE<br>
+>> PE-Studio<br>
+>> x32dbg<br>
+>> Wireshark<br>
+🔗 Full technical writeup:<br>
 👉 https://medium.com/@aufarifqi119/new-lummastealer-with-9-payloads-exposed-ee9c6e58fff4?sk=6ffb23cc5175e3e5674ac1b3312db1f5
-
-![caption](/assets/images/LummaStealer Flow.jpg)
 
 <figure class="img-center">
   <img src="/assets/images/LummaStealer Flow.jpg" alt="LummaStealer execution flow">
