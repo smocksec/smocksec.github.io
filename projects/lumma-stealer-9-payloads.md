@@ -9,7 +9,7 @@ Today i try to do some research related to new LummaStealer that will steal your
 
 Here share the IOC For my beloved friends :
 
-> Application.exe
+**<span class="hl-purple">Application.exe</span>**
 <div class="ioc-box">
   <pre id="ioc-1">
 SHA256: 07b8e705a0017ab1df5ffabc1fc7fb0a4d0738e98235b5725e47bb9d5229c5c4
@@ -26,7 +26,7 @@ SHA256: 477bb335e2512e4a6b24b9b4ba6811e3d318bfa77d7665fec93e8d13a7bd820b
 </div>
 
 
-Non-extension Files (used as binary chunks) 
+>> Non-extension Files (used as binary chunks) 
 C:\Users[username]\AppData\Local\Temp\IXP00*.TMP\Auction 
 <div class="ioc-box">
   <pre id="ioc-3">
@@ -35,7 +35,7 @@ C:\Users[username]\AppData\Local\Temp\IXP00*.TMP\Auction
   <button onclick="copyIOC('ioc-3')">📋 Copy</button>
 </div>
 
-> C:\Users[username]\AppData\Local\Temp\IXP00*.TMP\Mono
+>> C:\Users[username]\AppData\Local\Temp\IXP00*.TMP\Mono
 <div class="ioc-box">
   <pre id="ioc-4">
 Sha256 = 39894bd31e013bdf4b716edc33ea8c0f3fc1fff9fd9d24c832cd993b9f5e0823
@@ -43,7 +43,7 @@ Sha256 = 39894bd31e013bdf4b716edc33ea8c0f3fc1fff9fd9d24c832cd993b9f5e0823
   <button onclick="copyIOC('ioc-4')">📋 Copy</button>
 </div>
 
-> C:\Users[username]\AppData\Local\Temp\IXP00*.TMP\Portraits
+>> C:\Users[username]\AppData\Local\Temp\IXP00*.TMP\Portraits
 <div class="ioc-box">
   <pre id="ioc-5">
   Sha256 = a9520272d2babe2f34f1a74305b24b7c1ae459ea89cc01f88ef01a0096b59a8a
@@ -51,7 +51,7 @@ Sha256 = 39894bd31e013bdf4b716edc33ea8c0f3fc1fff9fd9d24c832cd993b9f5e0823
   <button onclick="copyIOC('ioc-5')">📋 Copy</button>
 </div>
 
-> C:\Users[username]\AppData\Local\Temp\IXP00*.TMP\Uniform 
+>> C:\Users[username]\AppData\Local\Temp\IXP00*.TMP\Uniform 
 <div class="ioc-box">
   <pre id="ioc-6">
   Sha256 = 206c9d2ddabe36afabc229657ff5578f63b4a27e04ee5877afc1f2db8908e45e
@@ -60,6 +60,7 @@ Sha256 = 39894bd31e013bdf4b716edc33ea8c0f3fc1fff9fd9d24c832cd993b9f5e0823
 </div>
 
 >> .accde Files (Malicious AutoIt scripts / encoded logic) 
+
 > C:\Users[username]\AppData\Local\Temp\IXP00*.TMP\Finish.accde 
 <div class="ioc-box">
   <pre id="ioc-7">
@@ -76,7 +77,10 @@ C:\Users[username]\AppData\Local\Temp\IXP00*.TMP\Lifetime.accde
   <button onclick="copyIOC('ioc-8')">📋 Copy</button>
 </div>
 
-> C:\Users[username]\AppData\Local\Temp\IXP00*.TMP\Omega.accde
+```neon card -finding```
+<div class="neon-card finding">
+<strong>> C:\Users[username]\AppData\Local\Temp\IXP00*.TMP\Omega.accde</strong> 
+</div>
 <div class="ioc-box">
   <pre id="ioc-9">
   Sha256 = 0dae6b98f0d5257f798d62af670af37bfd99d40a71336f6bac59136e53fd0382
@@ -104,11 +108,15 @@ C:\Users[username]\AppData\Local\Temp\IXP00*.TMP\Lifetime.accde
 Credential Targeting (Observed at Runtime) 
 --> C:\Users[username]\AppData\Roaming\Microsoft\Credentials\
 
-Observed command pattern: cmd /v /c Set =cmd & !! < Lifetime.accde
+**<span class="hl-purple">Observed command pattern: cmd /v /c Set =cmd & !! < Lifetime.accde</span>**
 
-Primary C2 
+<div class="highlight-box">
+
+**Primary C2**  
 --> offenms[.]cyou 
 --> file-storage[.]cc
+
+</div>
 
 Follow-up / Secondary Malware Infrastructure 
 --> https://pastebin[.]com/raw/pr8gCLAA 
@@ -124,5 +132,10 @@ Wireshark
 🔗 Full technical writeup:
 👉 https://medium.com/@aufarifqi119/new-lummastealer-with-9-payloads-exposed-ee9c6e58fff4?sk=6ffb23cc5175e3e5674ac1b3312db1f5
 
-LummaStealer Flow.jpg ![Extracted JavaScript from malicious PDF](/assets/images/LummaStealer Flow.jpg)
+![caption](/assets/images/LummaStealer Flow.jpg)
+
+<figure class="img-center">
+  <img src="/assets/images/LummaStealer Flow.jpg" alt="LummaStealer execution flow">
+  <figcaption>LummaStealer execution flow and payload staging</figcaption>
+</figure>
 

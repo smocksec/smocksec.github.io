@@ -102,3 +102,125 @@ body.page-projects {
   border: 1px solid #eaeaea;
   border-radius: 8px;
 }
+
+/* Inline highlight */
+.hl-purple {
+  color: #e0b3ff;
+  background: rgba(140, 100, 255, 0.15);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+/* Highlight block */
+.highlight-box {
+  border-left: 4px solid #9f7aea;
+  background: rgba(159, 122, 234, 0.12);
+  padding: 14px 18px;
+  margin: 20px 0;
+  border-radius: 6px;
+}
+
+/* Center main content */
+.page-content {
+  max-width: 900px;
+  margin: auto;
+  text-align: left; /* important */
+}
+
+/* Centered images with clean captions */
+.img-center {
+  text-align: center;
+  margin: 30px auto;
+}
+
+.img-center img {
+  max-width: 100%;
+  border-radius: 8px;
+  border: 1px solid #3b2f5f;
+}
+
+.img-center figcaption {
+  margin-top: 10px;
+  font-size: 0.8em;
+  color: #bfaaff;
+  font-style: italic;
+}
+
+/* ===== Responsive Base ===== */
+
+.page-content {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Prevent horizontal overflow on small screens */
+body {
+  overflow-x: hidden;
+}
+
+/* Images always responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* ===== Mobile Optimization ===== */
+@media (max-width: 768px) {
+
+  .page-content {
+    padding: 14px;
+  }
+
+  .neon-card {
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow:
+      0 0 6px rgba(155, 135, 255, 0.25),
+      0 0 16px rgba(155, 135, 255, 0.15);
+  }
+
+  .ioc-box pre {
+    font-size: 0.75em;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  h2 {
+    font-size: 1.25em;
+  }
+}
+
+/* ===== Neon Card Box ===== */
+.neon-card.finding {
+  border-left: 4px solid #9f7aea;
+}
+
+.neon-card {
+  background: linear-gradient(180deg, #0f0f17, #0a0a12);
+  border: 1px solid #4b3b7a;
+  border-radius: 14px;
+  padding: 22px;
+  margin: 30px 0;
+
+  /* Neon glow */
+  box-shadow:
+    0 0 10px rgba(155, 135, 255, 0.25),
+    0 0 30px rgba(155, 135, 255, 0.15);
+
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Subtle lift on hover (desktop only) */
+.neon-card:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 0 14px rgba(155, 135, 255, 0.35),
+    0 0 40px rgba(155, 135, 255, 0.25);
+}
+.neon-card.warning {
+  border-left: 4px solid #ff6bcb;
+  box-shadow:
+    0 0 12px rgba(255, 107, 203, 0.25);
+}

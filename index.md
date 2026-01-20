@@ -1,5 +1,6 @@
 ---
 ---
+<div class="neon-card">
 
 👋 **Hi, I’m Aufa Rifqi**
 
@@ -10,6 +11,7 @@ I’m a Cybersecurity Engineer with 3+ years of hands-on experience in:
 - Malware Analysis
 - Automation
 
+</div>
 ---
 
 ## 🚀 Featured Project
