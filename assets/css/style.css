@@ -224,3 +224,74 @@ img {
   box-shadow:
     0 0 12px rgba(255, 107, 203, 0.25);
 }
+
+/* ===== Layout with Sidebar ===== */
+
+.layout {
+  display: flex;
+  gap: 30px;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  position: sticky;
+  top: 20px;
+  height: fit-content;
+
+  background: #0f0f17;
+  border: 1px solid #3b2f5f;
+  border-radius: 12px;
+  padding: 18px;
+
+  box-shadow:
+    0 0 12px rgba(155, 135, 255, 0.2);
+}
+
+.sidebar h3 {
+  margin-top: 0;
+  color: #e9d5ff;
+  font-size: 1em;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 10px 0;
+}
+
+.sidebar a {
+  color: #bfaaff;
+  font-size: 0.9em;
+  text-decoration: none;
+}
+
+.sidebar a:hover {
+  color: #ffffff;
+}
+
+/* Main content */
+.content {
+  flex: 1;
+  max-width: 900px;
+}
+
+/* ===== Mobile layout ===== */
+@media (max-width: 900px) {
+
+  .layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    position: relative;
+  }
+
+  .content {
+    max-width: 100%;
+  }
+}
