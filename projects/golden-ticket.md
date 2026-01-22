@@ -2,12 +2,12 @@
 
 <div class="neon-card finding">
 <strong>Golden Ticket attacks allow adversaries to mint Kerberos tickets that impersonate any user — including Domain Admins — and these forged tickets can bypass typical controls like password rotation and MFA. If your SOC lacks good Golden Ticket detection you may never notice domain compromise until it’s too late.</strong> 
+</div>
 
 <figure class="img-center">
   <img src="/assets/images/GoldenTicketAttackFlow.jpg" alt="GoldenTicketAttackFLow">
   <figcaption>Golden Ticket AttackFlow</figcaption>
 </figure>
-</div>
 
 <div class="highlight-box">
 Splunk: detect ticket lifetime > 10 hours and missing TGT correlation
@@ -28,4 +28,21 @@ Splunk: detect ticket lifetime > 10 hours and missing TGT correlation
     </pre>
   <button onclick="copyIOC('query-1')">📋 Copy</button>
 </div>
+
+
+<div class="neon-card finding">
+<strong>Correlate 4769 without preceding 4768</strong>
+</div>
+<div class="ioc-box">
+  <pre id="ioc-11">
+  index=your_activedirectory (EventCode=4768 OR EventCode=4769)
+| rex field=message "Logon GUID:\s+(?<logon_guid>[^\r\n]+)"
+| eval ev=EventCode
+| stats earliest(_time) as first_time by logon_guid, ev
+| stats values(first_time) as times by logon_guid
+| where NOT mvfind(mvkeys(times),"4768")  // pseudo filter - if 4768 not present before 4769
+    </pre>
+  <button onclick="copyIOC('ioc-11')">📋 Copy</button>
+</div>
+
 
