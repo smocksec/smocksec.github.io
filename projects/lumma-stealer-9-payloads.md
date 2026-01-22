@@ -1,29 +1,15 @@
 <h1 style="text-align: center;"> 🧪 New LummaStealer With 9 Payloads Exposed !!!! </h1>
 
-## Summary:
-Hi Everyone, Lumma Stealer with 9 payloads !!!!
-<p style="text-align: center;">Centered paragraph.</p>
 
-Today i try to do some research related to new LummaStealer that will steal your credentials and spawn CnC !!! the IP always changes, its spawn when you reboot !
-
-Here share the IOC For my beloved friends :
+<p style="text-align: center;">Hi Everyone, Lumma Stealer with 9 payloads !!!!,i try to do some research related to new LummaStealer that will steal your credentials and spawn CnC !!! the IP always changes, its spawn when you reboot !</p>
+<p style="text-align: center;">Here share the IOC For my beloved friends :</p>
 
 <div class="ioc-row">
 
 <div class="ioc-label">
-Application.exe
-</div>
-
-<div class="ioc-box">
-  <pre id="ioc-1">
-SHA256: 07b8e705a0017ab1df5ffabc1fc7fb0a4d0738e98235b5725e47bb9d5229c5c4
-  </pre>
-  <button onclick="copyIOC('ioc-1')">📋 Copy</button>
-</div>
-
-</div>
-
 **<span class="hl-purple">Application.exe</span>**
+</div>
+
 <div class="ioc-box">
   <pre id="ioc-1">
 SHA256: 07b8e705a0017ab1df5ffabc1fc7fb0a4d0738e98235b5725e47bb9d5229c5c4
@@ -31,7 +17,15 @@ SHA256: 07b8e705a0017ab1df5ffabc1fc7fb0a4d0738e98235b5725e47bb9d5229c5c4
   <button onclick="copyIOC('ioc-1')">📋 Copy</button>
 </div>
 
-> C:\Users\[username]\AppData\Local\Temp\IXP000.TMP\645429\Treat.exe
+</div>
+######################################################################
+
+<div class="ioc-row">
+
+<div class="ioc-label">
+**<span class="hl-purple">C:\Users\[username]\AppData\Local\Temp\IXP000.TMP\645429\Treat.exe</span>**
+</div>
+
 <div class="ioc-box">
   <pre id="ioc-2">
 SHA256: 477bb335e2512e4a6b24b9b4ba6811e3d318bfa77d7665fec93e8d13a7bd820b
@@ -39,7 +33,9 @@ SHA256: 477bb335e2512e4a6b24b9b4ba6811e3d318bfa77d7665fec93e8d13a7bd820b
   <button onclick="copyIOC('ioc-2')">📋 Copy</button>
 </div>
 
+</div>
 
+######################################################################
 >> Non-extension Files (used as binary chunks) 
 C:\Users[username]\AppData\Local\Temp\IXP00*.TMP\Auction 
 <div class="ioc-box">
@@ -48,7 +44,7 @@ C:\Users[username]\AppData\Local\Temp\IXP00*.TMP\Auction
     </pre>
   <button onclick="copyIOC('ioc-3')">📋 Copy</button>
 </div>
-
+######################################################################
 >> C:\Users[username]\AppData\Local\Temp\IXP00*.TMP\Mono
 <div class="ioc-box">
   <pre id="ioc-4">
@@ -56,7 +52,7 @@ Sha256 = 39894bd31e013bdf4b716edc33ea8c0f3fc1fff9fd9d24c832cd993b9f5e0823
     </pre>
   <button onclick="copyIOC('ioc-4')">📋 Copy</button>
 </div>
-
+######################################################################
 >> C:\Users[username]\AppData\Local\Temp\IXP00*.TMP\Portraits
 <div class="ioc-box">
   <pre id="ioc-5">
@@ -64,7 +60,7 @@ Sha256 = 39894bd31e013bdf4b716edc33ea8c0f3fc1fff9fd9d24c832cd993b9f5e0823
     </pre>
   <button onclick="copyIOC('ioc-5')">📋 Copy</button>
 </div>
-
+######################################################################
 >> C:\Users[username]\AppData\Local\Temp\IXP00*.TMP\Uniform 
 <div class="ioc-box">
   <pre id="ioc-6">
@@ -72,9 +68,9 @@ Sha256 = 39894bd31e013bdf4b716edc33ea8c0f3fc1fff9fd9d24c832cd993b9f5e0823
     </pre>
   <button onclick="copyIOC('ioc-6')">📋 Copy</button>
 </div>
-
+######################################################################
 >> .accde Files (Malicious AutoIt scripts / encoded logic) 
-
+######################################################################
 > C:\Users[username]\AppData\Local\Temp\IXP00*.TMP\Finish.accde 
 <div class="ioc-box">
   <pre id="ioc-7">
@@ -82,7 +78,7 @@ Sha256 = 39894bd31e013bdf4b716edc33ea8c0f3fc1fff9fd9d24c832cd993b9f5e0823
     </pre>
   <button onclick="copyIOC('ioc-7')">📋 Copy</button>
 </div>
-
+######################################################################
 C:\Users[username]\AppData\Local\Temp\IXP00*.TMP\Lifetime.accde 
 <div class="ioc-box">
   <pre id="ioc-8">
@@ -90,7 +86,7 @@ C:\Users[username]\AppData\Local\Temp\IXP00*.TMP\Lifetime.accde
     </pre>
   <button onclick="copyIOC('ioc-8')">📋 Copy</button>
 </div>
-
+######################################################################
 ```neon card -finding```
 <div class="neon-card finding">
 <strong>> C:\Users[username]\AppData\Local\Temp\IXP00*.TMP\Omega.accde</strong> 
@@ -101,7 +97,7 @@ C:\Users[username]\AppData\Local\Temp\IXP00*.TMP\Lifetime.accde
     </pre>
   <button onclick="copyIOC('ioc-9')">📋 Copy</button>
 </div>
-
+######################################################################
 > C:\Users[username]\AppData\Local\Temp\IXP00*.TMP\Refugees.accde 
 <div class="ioc-box">
   <pre id="ioc-10">
@@ -109,7 +105,7 @@ C:\Users[username]\AppData\Local\Temp\IXP00*.TMP\Lifetime.accde
     </pre>
   <button onclick="copyIOC('ioc-10')">📋 Copy</button>
 </div>
-
+######################################################################
 > C:\Users[username]\AppData\Local\Temp\IXP00*.TMP\Tries.accde
 <div class="ioc-box">
   <pre id="ioc-11">
@@ -117,13 +113,13 @@ C:\Users[username]\AppData\Local\Temp\IXP00*.TMP\Lifetime.accde
     </pre>
   <button onclick="copyIOC('ioc-11')">📋 Copy</button>
 </div>
-
+######################################################################
 
 Credential Targeting (Observed at Runtime) 
 --> C:\Users[username]\AppData\Roaming\Microsoft\Credentials\
-
+######################################################################
 **<span class="hl-purple">Observed command pattern: cmd /v /c Set =cmd & !! < Lifetime.accde</span>**
-
+######################################################################
 <div class="highlight-box">
 
 **Primary C2**  
@@ -131,12 +127,12 @@ Credential Targeting (Observed at Runtime)
 --> file-storage[.]cc
 
 </div>
-
+######################################################################
 Follow-up / Secondary Malware Infrastructure<br>
 --> https://pastebin[.]com/raw/pr8gCLAA<br>
 --> memory-scanner[.]cc<br>
 --> communicationfirewall-security[.]cc<br>
-
+######################################################################
 Tools Used:<br>
 
 >> exeinfoPE<br>
