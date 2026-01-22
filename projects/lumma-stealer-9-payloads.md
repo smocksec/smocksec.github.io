@@ -1,6 +1,4 @@
----
-title: 🧪 New LummaStealer With 9 Payloads Exposed !!!!
----
+<h1 style="text-align: center;"> 🧪 New LummaStealer With 9 Payloads Exposed !!!! </h1>
 
 ## Summary:
 Hi Everyone, Lumma Stealer with 9 payloads !!!!
