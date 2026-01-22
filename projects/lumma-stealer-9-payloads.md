@@ -4,6 +4,7 @@ title: 🧪 New LummaStealer With 9 Payloads Exposed !!!!
 
 ## Summary:
 Hi Everyone, Lumma Stealer with 9 payloads !!!!
+<p style="text-align: center;">Centered paragraph.</p>
 
 Today i try to do some research related to new LummaStealer that will steal your credentials and spawn CnC !!! the IP always changes, its spawn when you reboot !
 
