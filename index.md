@@ -1,21 +1,6 @@
 ---
 ---
 
-<div class="layout">
-
-  <aside class="sidebar">
-    <h3>📌 Navigation</h3>
-    <ul>
-      <li><a href="#summary">Summary</a></li>
-      <li><a href="#findings">Key Findings</a></li>
-      <li><a href="#iocs">IOCs</a></li>
-      <li><a href="#flow">Malware Flow</a></li>
-      <li><a href="/">← Home</a></li>
-    </ul>
-  </aside>
-
-  <main class="content">
-
 <div class="neon-card">
 
 👋 **Hi, I’m Aufa Rifqi**
@@ -43,6 +28,3 @@ Hands-on malware research covering payload staging, persistence, and C2 infrastr
 - GitHub: https://github.com/smocksec
 - LinkedIn: https://www.linkedin.com/in/aufa-rifqi-211939128/
 - Email: mailto:aufarifqi119@gmail.com
-
-  </main>
-</div>
