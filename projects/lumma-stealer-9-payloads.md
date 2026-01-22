@@ -98,7 +98,7 @@ Sha256 = 39894bd31e013bdf4b716edc33ea8c0f3fc1fff9fd9d24c832cd993b9f5e0823
 <div class="ioc-row">
 
 <div class="ioc-label">
-.accde Files (Malicious AutoIt scripts / encoded logic)<span class="hl-purple">C:\Users[username]\AppData\Local\Temp\IXP00*.TMP\Finish.accde</span>
+.accde Files (Malicious AutoIt scripts / encoded logic)<br><span class="hl-purple">C:\Users[username]\AppData\Local\Temp\IXP00*.TMP\Finish.accde</span>
 </div>
 
 <div class="ioc-box">
@@ -170,25 +170,24 @@ Sha256 = 39894bd31e013bdf4b716edc33ea8c0f3fc1fff9fd9d24c832cd993b9f5e0823
 </div>
 
 
-Credential Targeting (Observed at Runtime)
+Credential Targeting (Observed at Runtime):
 <div class="neon-card finding">
-<strong>>C:\Users[username]\AppData\Roaming\Microsoft\Credentials\</strong> 
+<strong>C:\Users[username]\AppData\Roaming\Microsoft\Credentials\</strong> 
 </div>
 
-
+Observed command pattern: 
 <div class="neon-card finding">
-<strong>> Observed command pattern: cmd /v /c Set =cmd & !! < Lifetime.accde</strong> 
+<strong>>cmd /v /c Set =cmd & !! < Lifetime.accde</strong> 
 </div>
 
+Primary C2<br>
 <div class="highlight-box">
-
-**Primary C2**  
 --> offenms[.]cyou<br>
 --> file-storage[.]cc
 
 </div>
 
-Follow-up / Secondary Malware Infrastructure<br>
+Follow-up / Secondary Malware Infrastructure:<br>
 <div class="highlight-box">
 --> https://pastebin[.]com/raw/pr8gCLAA<br>
 --> memory-scanner[.]cc<br>
@@ -199,10 +198,10 @@ Follow-up / Secondary Malware Infrastructure<br>
 <div class="highlight-box">
 Tools Used:<br>
 
-exeinfoPE<br>
-PE-Studio<br>
-x32dbg<br>
-Wireshark<br>
+-->exeinfoPE<br>
+-->PE-Studio<br>
+-->x32dbg<br>
+-->Wireshark<br>
 </div>
 
 🔗 Full technical writeup:<br>
