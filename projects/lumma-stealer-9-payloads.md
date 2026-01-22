@@ -9,6 +9,21 @@ Today i try to do some research related to new LummaStealer that will steal your
 
 Here share the IOC For my beloved friends :
 
+<div class="ioc-row">
+
+<div class="ioc-label">
+Application.exe
+</div>
+
+<div class="ioc-box">
+  <pre id="ioc-1">
+SHA256: 07b8e705a0017ab1df5ffabc1fc7fb0a4d0738e98235b5725e47bb9d5229c5c4
+  </pre>
+  <button onclick="copyIOC('ioc-1')">📋 Copy</button>
+</div>
+
+</div>
+
 **<span class="hl-purple">Application.exe</span>**
 <div class="ioc-box">
   <pre id="ioc-1">

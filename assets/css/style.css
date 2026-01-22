@@ -240,3 +240,17 @@ img {
     0 0 12px rgba(255, 107, 203, 0.25);
 }
 
+/* ===== IOC Row Alignment ===== */
+
+.ioc-row {
+  max-width: 780px;        /* SAME as .ioc-box */
+  margin: 0 auto 28px;     /* center the whole unit */
+}
+
+.ioc-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.85em;
+  color: #d6ccff;
+  margin-bottom: 8px;
+  word-break: break-word;
+}
