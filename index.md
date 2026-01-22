@@ -17,10 +17,15 @@ I’m a Cybersecurity Engineer with 3+ years of hands-on experience in:
 
 ## 🚀 Featured Project
 
+## Malware Analysis
 ### 🧪 LummaStealer – 9 Payloads IOC Analysis
 Hands-on malware research covering payload staging, persistence, and C2 infrastructure.
 
 👉 **[Read Project](/projects/lumma-stealer-9-payloads)**
+
+## 🧪 Detection Engineering
+### 🔥 Golden Tickets Detection Query Using Splunk & KQL
+👉 **[Read Project](/projects/golden-ticket.md)**
 
 ---
 
