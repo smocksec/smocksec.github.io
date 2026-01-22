@@ -18,7 +18,7 @@ SHA256: 07b8e705a0017ab1df5ffabc1fc7fb0a4d0738e98235b5725e47bb9d5229c5c4
 </div>
 
 </div>
-######################################################################
+
 
 <div class="ioc-row">
 
@@ -35,7 +35,7 @@ SHA256: 477bb335e2512e4a6b24b9b4ba6811e3d318bfa77d7665fec93e8d13a7bd820b
 
 </div>
 
-######################################################################
+
 <div class="ioc-row">
 
 <div class="ioc-label">
@@ -50,7 +50,7 @@ Non-extension Files (used as binary chunks)<span class="hl-purple">C:\Users[user
 </div>
 
 </div>
-######################################################################
+
 <div class="ioc-row">
 
 <div class="ioc-label">
@@ -63,7 +63,7 @@ Sha256 = 39894bd31e013bdf4b716edc33ea8c0f3fc1fff9fd9d24c832cd993b9f5e0823
     </pre>
   <button onclick="copyIOC('ioc-4')">📋 Copy</button>
 </div>
-######################################################################
+
 <div class="ioc-row">
 
 <div class="ioc-label">
@@ -76,7 +76,7 @@ Sha256 = 39894bd31e013bdf4b716edc33ea8c0f3fc1fff9fd9d24c832cd993b9f5e0823
     </pre>
   <button onclick="copyIOC('ioc-5')">📋 Copy</button>
 </div>
-######################################################################
+
 <div class="ioc-row">
 
 <div class="ioc-label">
@@ -92,9 +92,9 @@ Sha256 = 39894bd31e013bdf4b716edc33ea8c0f3fc1fff9fd9d24c832cd993b9f5e0823
 
 </div>
 
-######################################################################
 
-######################################################################
+
+
 <div class="ioc-row">
 
 <div class="ioc-label">
@@ -109,7 +109,7 @@ Sha256 = 39894bd31e013bdf4b716edc33ea8c0f3fc1fff9fd9d24c832cd993b9f5e0823
 </div>
 
 </div>
-######################################################################
+
 <div class="ioc-row">
 
 <div class="ioc-label">
@@ -124,42 +124,62 @@ Sha256 = 39894bd31e013bdf4b716edc33ea8c0f3fc1fff9fd9d24c832cd993b9f5e0823
 </div>
 
 </div>
-######################################################################
-```neon card -finding```
-<div class="neon-card finding">
-<strong>> C:\Users[username]\AppData\Local\Temp\IXP00*.TMP\Omega.accde</strong> 
+
+<div class="ioc-row">
+
+<div class="ioc-label">
+<span class="hl-purple">C:\Users[username]\AppData\Local\Temp\IXP00*.TMP\Omega.accde</span>
 </div>
+
 <div class="ioc-box">
   <pre id="ioc-9">
   Sha256 = 0dae6b98f0d5257f798d62af670af37bfd99d40a71336f6bac59136e53fd0382
     </pre>
   <button onclick="copyIOC('ioc-9')">📋 Copy</button>
 </div>
-######################################################################
-> C:\Users[username]\AppData\Local\Temp\IXP00*.TMP\Refugees.accde 
+
+</div>
+
+<div class="ioc-row">
+
+<div class="ioc-label">
+<span class="hl-purple">C:\Users[username]\AppData\Local\Temp\IXP00*.TMP\Refugees.accde</span>
+</div>
+
 <div class="ioc-box">
   <pre id="ioc-10">
   Sha256 = 069b85a7122cd078fc78144a583ce3969edb9c1dde00d0156cfec733da2e5d8e
     </pre>
   <button onclick="copyIOC('ioc-10')">📋 Copy</button>
 </div>
-######################################################################
-> C:\Users[username]\AppData\Local\Temp\IXP00*.TMP\Tries.accde
+
+
+<div class="ioc-row">
+
+<div class="ioc-label">
+<span class="hl-purple">C:\Users[username]\AppData\Local\Temp\IXP00*.TMP\Tries.accde</span>
+</div>
+
 <div class="ioc-box">
   <pre id="ioc-11">
   Sha256 = 15222a5cc0749c95228274cc23aeb9231c1f8d9025e456becc625a68f5f59f35
     </pre>
   <button onclick="copyIOC('ioc-11')">📋 Copy</button>
 </div>
-######################################################################
 
-Credential Targeting (Observed at Runtime) 
---> C:\Users[username]\AppData\Roaming\Microsoft\Credentials\
-######################################################################
+</div>
+
+
+Credential Targeting (Observed at Runtime)
+<div class="neon-card finding">
+<strong>>C:\Users[username]\AppData\Roaming\Microsoft\Credentials\</strong> 
+</div>
+
+
 <div class="neon-card finding">
 <strong>> Observed command pattern: cmd /v /c Set =cmd & !! < Lifetime.accde</strong> 
 </div>
-######################################################################
+
 <div class="highlight-box">
 
 **Primary C2**  
@@ -167,23 +187,26 @@ Credential Targeting (Observed at Runtime)
 --> file-storage[.]cc
 
 </div>
-######################################################################
+
 Follow-up / Secondary Malware Infrastructure<br>
+<div class="highlight-box">
 --> https://pastebin[.]com/raw/pr8gCLAA<br>
 --> memory-scanner[.]cc<br>
 --> communicationfirewall-security[.]cc<br>
-######################################################################
+
+</div>
 
 <div class="highlight-box">
 Tools Used:<br>
 
->> exeinfoPE<br>
->> PE-Studio<br>
->> x32dbg<br>
->> Wireshark<br>
+exeinfoPE<br>
+PE-Studio<br>
+x32dbg<br>
+Wireshark<br>
 </div>
+
 🔗 Full technical writeup:<br>
-👉 https://medium.com/@aufarifqi119/new-lummastealer-with-9-payloads-exposed-ee9c6e58fff4?sk=6ffb23cc5175e3e5674ac1b3312db1f5
+<a href="https://medium.com/@aufarifqi119/new-lummastealer-with-9-payloads-exposed-ee9c6e58fff4?sk=6ffb23cc5175e3e5674ac1b3312db1f5">👉 Check My Medium Article</a>
 
 <figure class="img-center">
   <img src="/assets/images/LummaStealer Flow.jpg" alt="LummaStealer execution flow">
