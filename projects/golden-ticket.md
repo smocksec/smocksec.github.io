@@ -5,7 +5,7 @@
 </div>
 
 <figure class="img-center">
-  <img src="/assets/images/GoldenTicketAttackFlow.jpg" alt="GoldenTicketAttackFLow">
+  <img src="/assets/images/GoldenTicketAttackFlow.png" alt="GoldenTicketAttackFLow">
   <figcaption>Golden Ticket AttackFlow</figcaption>
 </figure>
 
