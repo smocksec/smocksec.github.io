@@ -23,7 +23,7 @@ SHA256: 07b8e705a0017ab1df5ffabc1fc7fb0a4d0738e98235b5725e47bb9d5229c5c4
 <div class="ioc-row">
 
 <div class="ioc-label">
-**<span class="hl-purple">C:\Users\[username]\AppData\Local\Temp\IXP000.TMP\645429\Treat.exe</span>**
+<span class="hl-purple">C:\Users\[username]\AppData\Local\Temp\IXP000.TMP\645429\Treat.exe</span>
 </div>
 
 <div class="ioc-box">
@@ -36,13 +36,20 @@ SHA256: 477bb335e2512e4a6b24b9b4ba6811e3d318bfa77d7665fec93e8d13a7bd820b
 </div>
 
 ######################################################################
->> Non-extension Files (used as binary chunks) 
-C:\Users[username]\AppData\Local\Temp\IXP00*.TMP\Auction 
+<div class="ioc-row">
+
+<div class="ioc-label">
+Non-extension Files (used as binary chunks)<span class="hl-purple">
+C:\Users[username]\AppData\Local\Temp\IXP00*.TMP\Auction </span>
+</div>
+
 <div class="ioc-box">
   <pre id="ioc-3">
   Sha256 = d7699a27667cfa32a2d1d0148592cebd1894ab4df05e758e734571ce51646aa7
     </pre>
   <button onclick="copyIOC('ioc-3')">📋 Copy</button>
+</div>
+
 </div>
 ######################################################################
 >> C:\Users[username]\AppData\Local\Temp\IXP00*.TMP\Mono
