@@ -31,8 +31,7 @@ Splunk: detect ticket lifetime &gt; 10 hours and missing TGT correlation
 | eval ticket_lifetime_hours = (ticket_end_epoch - ticket_start_epoch) / 3600
 | where ticket_lifetime_hours > 10 OR service_name="krbtgt"
 | stats values(EventCode) as events count by target_user, service_name, ticket_lifetime_hours, _time
-| where count > 0
-  </pre>
+| where count > 0</pre>
   <button onclick="copyIOC('ioc-1')">📋 Copy</button>
 </div>
 
