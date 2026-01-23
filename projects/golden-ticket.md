@@ -14,15 +14,10 @@ Golden Ticket attacks allow adversaries to mint Kerberos tickets that impersonat
   <img src="/assets/images/GoldenTicketAttackFlow.png" alt="Golden Ticket Attack Flow">
   <figcaption>Golden Ticket Attack Flow</figcaption>
 </figure>
+<h3 class="query-title">🕒 Query 1: Ticket lifetime &gt; 10 hours</h3>
 
-<h2 class="section-title">🔍 Detection Logic</h2>
-
-<div class="highlight-box">
-Splunk: detect ticket lifetime &gt; 10 hours and missing TGT correlation
-</div>
 <div class="ioc-box">
   <pre id="ioc-1">
-# Query 1: Detect ticket lifetime &gt; 10 hours
 index=your_activedirectory EventCode=4768 OR EventCode=4769
 | rex field=message "Start Time:\s+(?<ticket_start>[^\r\n]+)"
 | rex field=message "End Time:\s+(?<ticket_end>[^\r\n]+)"
@@ -34,8 +29,14 @@ index=your_activedirectory EventCode=4768 OR EventCode=4769
 | where ticket_lifetime_hours > 10 OR service_name="krbtgt"
 | stats values(EventCode) as events count by target_user, service_name, ticket_lifetime_hours, _time
 | where count > 0
+  </pre>
+  <button onclick="copyIOC('ioc-1')">📋 Copy</button>
+</div>
 
-# Query 2: Correlate 4769 without preceding 4768
+<h3 class="query-title">🔗 Query 2: 4769 without preceding 4768</h3>
+
+<div class="ioc-box">
+  <pre id="ioc-2">
 index=your_activedirectory (EventCode=4768 OR EventCode=4769)
 | rex field=message "Logon GUID:\s+(?<logon_guid>[^\r\n]+)"
 | eval ev=EventCode
@@ -43,5 +44,5 @@ index=your_activedirectory (EventCode=4768 OR EventCode=4769)
 | stats values(first_time) as times by logon_guid
 | where NOT mvfind(mvkeys(times),"4768")
   </pre>
-  <button onclick="copyIOC('ioc-1')">📋 Copy</button>
+  <button onclick="copyIOC('ioc-2')">📋 Copy</button>
 </div>
