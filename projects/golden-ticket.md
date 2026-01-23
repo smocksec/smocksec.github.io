@@ -37,9 +37,10 @@ Splunk: detect ticket lifetime &gt; 10 hours and missing TGT correlation
   <button onclick="copyIOC('ioc-1')">📋 Copy</button>
 </div>
 
-<div class="neon-card finding">
-<strong>Correlate 4769 without preceding 4768</strong>
+<div class="highlight-box">
+Correlate 4769 without preceding 4768
 </div>
+
 
 <div class="ioc-box">
   <pre id="ioc-11">index=your_activedirectory (EventCode=4768 OR EventCode=4769)
