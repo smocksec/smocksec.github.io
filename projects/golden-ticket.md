@@ -13,7 +13,7 @@
 Splunk: detect ticket lifetime > 10 hours and missing TGT correlation
 </div>
 <div class="ioc-box">
-  <pre id="query-1">
+  <pre id="ioc-1">
   index=your_activedirectory EventCode=4768 OR EventCode=4769
 | rex field=message "Start Time:\s+(?<ticket_start>[^\r\n]+)"
 | rex field=message "End Time:\s+(?<ticket_end>[^\r\n]+)"
@@ -26,7 +26,7 @@ Splunk: detect ticket lifetime > 10 hours and missing TGT correlation
 | stats values(EventCode) as events count by target_user, service_name, ticket_lifetime_hours, _time
 | where count > 0
     </pre>
-  <button onclick="copyIOC('query-1')">📋 Copy</button>
+  <button onclick="copyIOC('ioc-1')">📋 Copy</button>
 </div>
 
 
