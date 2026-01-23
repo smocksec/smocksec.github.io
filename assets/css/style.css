@@ -21,6 +21,16 @@ h1, h2, h3, h4 {
   color: #e9d5ff;
   font-weight: 600;
 }
+.page-title {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.section-title {
+  margin-top: 60px;
+  margin-bottom: 16px;
+  color: #c084fc;
+}
 
 /* Page container */
 .page-content {
@@ -144,22 +154,22 @@ body.page-projects {
 
 /* Centered images with clean captions */
 .img-center {
+  margin: 50px auto;
   text-align: center;
-  margin: 30px auto;
 }
 
 .img-center img {
   max-width: 100%;
-  border-radius: 8px;
-  border: 1px solid #3b2f5f;
+  border-radius: 10px;
+  box-shadow: 0 0 30px rgba(159, 122, 234, 0.35);
 }
 
 .img-center figcaption {
-  margin-top: 10px;
-  font-size: 0.8em;
-  color: #bfaaff;
-  font-style: italic;
+  margin-top: 12px;
+  font-size: 0.85em;
+  color: #a78bfa;
 }
+
 
 /* ===== Responsive Base ===== */
 
@@ -253,4 +263,9 @@ img {
   color: #d6ccff;
   margin-bottom: 8px;
   word-break: break-word;
+}
+.content-wrap {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 40px 20px;
 }
