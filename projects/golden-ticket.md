@@ -20,7 +20,6 @@ Golden Ticket attacks allow adversaries to mint Kerberos tickets that impersonat
 <div class="highlight-box">
 Splunk: detect ticket lifetime &gt; 10 hours and missing TGT correlation
 </div>
-
 <div class="ioc-box">
   <pre id="ioc-1">index=your_activedirectory EventCode=4768 OR EventCode=4769
 | rex field=message "Start Time:\s+(?<ticket_start>[^\r\n]+)"
@@ -40,8 +39,6 @@ Splunk: detect ticket lifetime &gt; 10 hours and missing TGT correlation
 <div class="highlight-box">
 Correlate 4769 without preceding 4768
 </div>
-
-
 <div class="ioc-box">
   <pre id="ioc-11">index=your_activedirectory (EventCode=4768 OR EventCode=4769)
 | rex field=message "Logon GUID:\s+(?<logon_guid>[^\r\n]+)"
@@ -51,6 +48,4 @@ Correlate 4769 without preceding 4768
 | where NOT mvfind(mvkeys(times),"4768")
   </pre>
   <button onclick="copyIOC('ioc-11')">📋 Copy</button>
-</div>
-
 </div>
