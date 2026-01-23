@@ -33,6 +33,10 @@ index=your_activedirectory EventCode=4768 OR EventCode=4769
   <button onclick="copyIOC('ioc-1')">📋 Copy</button>
 </div>
 
+</div>
+
+<div class="content-wrap">
+
 <h3 class="query-title">🔗 Query 2: 4769 without preceding 4768</h3>
 
 <div class="ioc-box">
