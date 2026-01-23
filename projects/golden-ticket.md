@@ -46,3 +46,5 @@ index=your_activedirectory (EventCode=4768 OR EventCode=4769)
   </pre>
   <button onclick="copyIOC('ioc-2')">📋 Copy</button>
 </div>
+
+</div>
