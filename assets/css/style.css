@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;600&display=swap');
-/* ===== Global Dark Theme Override (Cayman-safe) ===== */
 
+/* ===== Global Dark Theme Override (Cayman-safe) ===== */
 body {
   background-color: #0b0b0f;      /* deep SOC black */
   color: #c9b6ff;                 /* soft neon purple */
   font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
 }
 
 /* Links */
@@ -21,6 +22,7 @@ h1, h2, h3, h4 {
   color: #e9d5ff;
   font-weight: 600;
 }
+
 .page-title {
   text-align: center;
   margin-bottom: 32px;
@@ -32,29 +34,84 @@ h1, h2, h3, h4 {
   color: #c084fc;
 }
 
-/* Page container */
+/* Paragraph and list styling */
+p, li {
+  color: #d6ccff;
+  line-height: 1.65;
+}
+
+/* Images always responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ===== Page Layout ===== */
 .page-content {
-  max-width: 820px;   /* 👈 adjust: 760–900 is ideal */
+  max-width: 900px;
   margin: 0 auto;
   padding: 20px;
+  text-align: left;
 }
-/* IOC Box Styling */
+
+.page-content p,
+.page-content li,
+.page-content pre {
+  text-align: left;
+}
+
+.page-content h2 {
+  margin-top: 40px;
+}
+
+.content-wrap {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* ===== Neon Card Box ===== */
+.neon-card {
+  background: linear-gradient(180deg, #0f0f17, #0a0a12);
+  border: 1px solid #4b3b7a;
+  border-radius: 14px;
+  padding: 22px;
+  margin: 30px auto;
+  max-width: 780px;
+
+  /* Neon glow */
+  box-shadow:
+    0 0 10px rgba(155, 135, 255, 0.25),
+    0 0 30px rgba(155, 135, 255, 0.15);
+
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.neon-card:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 0 14px rgba(155, 135, 255, 0.35),
+    0 0 40px rgba(155, 135, 255, 0.25);
+}
+
+.neon-card.finding {
+  border-left: 4px solid #9f7aea;
+}
+
+.neon-card.warning {
+  border-left: 4px solid #ff6bcb;
+  box-shadow:
+    0 0 12px rgba(255, 107, 203, 0.25);
+}
+
 /* ===== IOC Box Styling (Neon SOC Style) ===== */
-
-.ioc-section {
-  margin-top: 30px;
-  padding: 20px;
-  border: 1px solid #3b2f5f;
-  border-radius: 10px;
-  background: #0f0f17;
-}
-
 .ioc-box {
   background: #0a0a12;
   border: 1px solid #4b3b7a;
   padding: 14px 16px;
-  margin: 18px 0;
+  margin: 18px auto;
   border-radius: 8px;
+  max-width: 780px;
 }
 
 .ioc-box pre {
@@ -67,7 +124,6 @@ h1, h2, h3, h4 {
   line-height: 1.4;
 }
 
-/* Copy button */
 .ioc-box button {
   margin-top: 10px;
   padding: 6px 14px;
@@ -84,51 +140,41 @@ h1, h2, h3, h4 {
   background: #2a1848;
   color: #ffffff;
 }
-/* Center and constrain IOC boxes */
-.ioc-box,
-.neon-card,
-.highlight-box {
+
+.ioc-section {
+  margin-top: 30px;
+  padding: 20px;
+  border: 1px solid #3b2f5f;
+  border-radius: 10px;
+  background: #0f0f17;
   max-width: 780px;
   margin-left: auto;
   margin-right: auto;
 }
-.page-content p,
-.page-content li,
-.page-content pre {
-  text-align: left;
+
+.ioc-row {
+  max-width: 780px;
+  margin: 0 auto 28px;
 }
 
-p, li {
+.ioc-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.85em;
   color: #d6ccff;
-  line-height: 1.65;
+  margin-bottom: 8px;
+  word-break: break-word;
 }
 
-body.page-projects {
-  background: #0b0b0f;
-}
-/* Improve Cayman readability for long reports */
-.page-content {
-  max-width: 900px;
-  margin: auto;
-}
-
-/* Section spacing */
-.page-content h2 {
-  margin-top: 40px;
+/* ===== Highlight Styling ===== */
+.highlight-box {
+  border-left: 4px solid #9f7aea;
+  background: rgba(159, 122, 234, 0.12);
+  padding: 14px 18px;
+  margin: 20px auto;
+  border-radius: 6px;
+  max-width: 780px;
 }
 
-/* IOC block spacing */
-.ioc-box {
-  margin-top: 15px;
-}
-
-.ioc-section {
-  padding: 20px;
-  border: 1px solid #eaeaea;
-  border-radius: 8px;
-}
-
-/* Inline highlight */
 .hl-purple {
   color: #e0b3ff;
   background: rgba(140, 100, 255, 0.15);
@@ -136,26 +182,11 @@ body.page-projects {
   border-radius: 4px;
 }
 
-/* Highlight block */
-.highlight-box {
-  border-left: 4px solid #9f7aea;
-  background: rgba(159, 122, 234, 0.12);
-  padding: 14px 18px;
-  margin: 20px 0;
-  border-radius: 6px;
-}
-
-/* Center main content */
-.page-content {
-  max-width: 900px;
-  margin: auto;
-  text-align: left; /* important */
-}
-
-/* Centered images with clean captions */
+/* ===== Image Styling ===== */
 .img-center {
   margin: 50px auto;
   text-align: center;
+  max-width: 780px;
 }
 
 .img-center img {
@@ -169,6 +200,8 @@ body.page-projects {
   font-size: 0.85em;
   color: #a78bfa;
 }
+
+/* ===== Query Title ===== */
 .query-title {
   margin-top: 40px;
   margin-bottom: 10px;
@@ -180,27 +213,8 @@ body.page-projects {
   margin-top: 50px;
 }
 
-/* ===== Responsive Base ===== */
-
-.page-content {
-  max-width: 900px;
-  margin: auto;
-  padding: 20px;
-}
-
-/* Prevent horizontal overflow on small screens */
-body {
-  overflow-x: hidden;
-}
-
-/* Images always responsive */
-img {
-  max-width: 100%;
-  height: auto;
-}
 /* ===== Mobile Optimization ===== */
 @media (max-width: 768px) {
-
   .page-content {
     padding: 14px;
   }
@@ -224,57 +238,4 @@ img {
   h2 {
     font-size: 1.25em;
   }
-}
-
-/* ===== Neon Card Box ===== */
-.neon-card.finding {
-  border-left: 4px solid #9f7aea;
-}
-
-.neon-card {
-  background: linear-gradient(180deg, #0f0f17, #0a0a12);
-  border: 1px solid #4b3b7a;
-  border-radius: 14px;
-  padding: 22px;
-  margin: 30px 0;
-
-  /* Neon glow */
-  box-shadow:
-    0 0 10px rgba(155, 135, 255, 0.25),
-    0 0 30px rgba(155, 135, 255, 0.15);
-
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-
-/* Subtle lift on hover (desktop only) */
-.neon-card:hover {
-  transform: translateY(-4px);
-  box-shadow:
-    0 0 14px rgba(155, 135, 255, 0.35),
-    0 0 40px rgba(155, 135, 255, 0.25);
-}
-.neon-card.warning {
-  border-left: 4px solid #ff6bcb;
-  box-shadow:
-    0 0 12px rgba(255, 107, 203, 0.25);
-}
-
-/* ===== IOC Row Alignment ===== */
-
-.ioc-row {
-  max-width: 780px;        /* SAME as .ioc-box */
-  margin: 0 auto 28px;     /* center the whole unit */
-}
-
-.ioc-label {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 0.85em;
-  color: #d6ccff;
-  margin-bottom: 8px;
-  word-break: break-word;
-}
-.content-wrap {
-  max-width: 880px;
-  margin: 0 auto;
-  padding: 40px 20px;
 }
