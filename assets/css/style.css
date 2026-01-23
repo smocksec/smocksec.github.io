@@ -109,7 +109,8 @@ img {
   background: #0a0a12;
   border: 1px solid #4b3b7a;
   padding: 14px 16px;
-  margin: 18px auto;
+  margin: 20px auto;
+  margin-bottom: 40px;
   border-radius: 8px;
   max-width: 780px;
 }
@@ -204,9 +205,11 @@ img {
 /* ===== Query Title ===== */
 .query-title {
   margin-top: 40px;
-  margin-bottom: 10px;
+  margin-bottom: 16px;
   color: #c084fc;
   font-size: 1.1em;
+  font-weight: 600;
+  text-align: left;
 }
 
 .ioc-box + .query-title {
